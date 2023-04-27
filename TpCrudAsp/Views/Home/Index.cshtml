@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4 titulo1">TODO AUTOS</h1>
+        <div class="buton-container">
+
+            <div class="slider">
+                <div class="sliderul">
+
+                    <div class="sliderli d-lg-grid ">
+                        <div class="imagenPrincipal "></div>
+                        @* <img src="../wwwroot/images/frente consesionaria.jpg" alt="" class="d-block w-100"/>*@
+                    </div>
+
+                    <div class="sliderli">
+                        @*   <img src="../wwwroot/images/308Active.jpg"  alt="" class="d-block w-100" />*@
+                        <div class="imagensegunda "></div>
+                    </div>
+
+                    <div class="sliderli">
+                        @*<img src="../wwwroot/images/mercedezBenzC200.jpg"  alt="" class="d-block w-100" />*@
+                        <div class="imagentercer"></div>
+                    </div>
+
+                    <div class="sliderli">
+                        @*<img src="../wwwroot/images/mercedezBenzC200.jpg"  alt="" class="d-block w-100" />*@
+                        <div class="imagencuarta"></div>
+                    </div>
+                </div>
+
+            </div>
+            <a asp-action="Listar" asp-controller="Crud" class="btn btn-success volver index">Ir al Listado</a>
+        </div>
+    </div>
+    <main class="container main ">
+        <section class="seccion">
+            <p class="parrafo">
+                <span style="font-size: 30px">Un concesionario</span>
+                <br />
+                concesionaria es un comercio minorista que vende automóviles nuevos o de segunda mano. En la mayoría de los casos, los concesionarios son empresas independientes, autorizadas por las marcas fabricantes a vender sus vehículos por medio de un contrato de concesión. Para operar, los concesionarios emplean vendedores especializados y disponen de un salón de ventas para exhibir sus productos al público. Muchos desarrollan también actividades periféricas a la venta de autos, como revisión y mantenimiento mecánico, venta de repuestos, ejecución de garantías y gestiones de matrícula.
+
+            </p>
+        </section>
+        <aside class="imagenAside"></aside>
+    </main>
+
+
+</body>

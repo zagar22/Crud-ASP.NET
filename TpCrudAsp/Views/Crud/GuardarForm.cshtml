@@ -1,0 +1,60 @@
+﻿@model ModelAutos
+@{
+    ViewData["Title"] = "GuardarForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Formulario</h1>
+
+<div class="card">
+  <h5 class="card-header">Agregar Automovil</h5>
+    <div class="card-body">
+
+        <form asp-action="GuardarForm" asp-controller="Crud" method="post">
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Marca</strong></label>
+                <input asp-for="marca" type="text" class="form-control" asp-validation-for="marca" class="text-danger">  
+                <span asp-validation-for="marca" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Modelo</strong></label>
+                <input asp-for="modelo" type="text" class="form-control">
+                <span asp-validation-for="modelo" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Patente</strong></label>
+                <input asp-for="patente" type="text" class="form-control">
+                <span asp-validation-for="patente" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Precio</strong></label>
+                <input asp-for="precio" type="text" class="form-control">
+                <span asp-validation-for="precio" class="text-danger"></span>
+            </div>
+
+             <div class="mb-3">
+                <label class="form-label"><strong>Descripcion</strong></label>
+                <input asp-for="descripcion" type="text" class="form-control">
+                <span asp-validation-for="descripcion" class="text-danger"></span>
+            </div>
+
+             <div class="mb-3">
+                <label class="form-label"><strong>Escribe la URL de la Imagen</strong></label>
+                <input asp-for="img" type="text" class="form-control">
+                <span asp-validation-for="img" class="text-danger"></span>
+            </div>
+
+           
+            
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a asp-action="Listar" asp-controller="Crud" class="btn btn-success volver">Volver a la Lista de Autos</a>
+
+        </form>
+
+     </div>
+</div>
+

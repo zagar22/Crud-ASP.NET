@@ -1,0 +1,242 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: whitesmoke;
+}
+
+footer {
+    height: 1vh;
+}
+
+.card:hover {
+    box-shadow: -1px 9px 40px -12px #808080;
+}
+
+.btn-primary, .btncard {
+    background-color: darkblue;
+}
+
+    .btn-primary:hover {
+        background-color: green;
+    }
+
+.eliminar:hover {
+    background-color: red;
+}
+
+.card-header {
+    background-color: darkblue;
+}
+
+h1, h2, .volver, .btn-primary, .subtitulo, .btncard, .linkNav, .todoautos {
+    font-family: 'Arial Rounded MT';
+}
+
+h1, h5, .text-center {
+    color: azure;
+}
+
+h2, h1, .h5Card {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subtitulo {
+    color: white;
+}
+
+.navegacion {
+    background-color: darkblue;
+}
+
+.card, .imagen {
+    transition: 500ms;
+}
+
+    .imagen:hover,
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.imagenPrincipal {
+    display: block;
+    background: url("../images/frente consesionaria.jpg") no-repeat 0 10%;
+    background-position: center;
+    background-size: cover;
+    padding: 2px 20px 2px 20px;
+    width: 100%;
+    height: 70vh;
+}
+
+.imagensegunda {
+    display: block;
+    background: url("../images/Ford-Kuga-2017.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 2px 20px 2px 20px;
+    width: 100%;
+    height: 70vh;
+}
+
+.imagentercer {
+    display: block;
+    background: url("../images/5ffe320c43709_950_534!.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 2px 20px 2px 20px;
+    height: 70vh;
+}
+
+.imagencuarta {
+    display: block;
+    background: url("../images/volkswagengol.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 2px 20px 2px 20px;
+    height: 70vh;
+}
+
+.titulo1 {
+    background-color: darkblue;
+    color: azure;
+}
+
+.container .main {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    height: 60vh;
+}
+
+.parrafo {
+    margin-top: 50px;
+    font-family: 'Arial Rounded MT';
+    font-style: italic;
+    width: 50%;
+    float: left;
+    padding: 20px 70px 10px 0;
+    box-sizing: border-box;
+    text-align: justify;
+    height: auto;
+}
+
+.imagenAside {
+    background: url("../images/toyotaEtios.jpg") no-repeat 0 10%;
+    background-size: cover;
+    margin-top: 50px;
+    float: right;
+    width: 50%;
+    height: 40vh;
+}
+
+.buton-container {
+    display: block;
+    position: relative;
+}
+
+    .buton-container a {
+        position: absolute;
+        bottom: 4em;
+        right: 25em;
+        width: 30em;
+        background-color: darkblue;
+        border-radius: 1.5em;
+        color: white;
+        text-transform: uppercase;
+        padding: 1em 1.5em;
+    }
+
+.buscar {
+    position: absolute;
+    right: 22.2em;
+}
+
+
+/*carousel*/
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+    .slider .sliderul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: cambio 15s infinite alternate linear;
+    }
+
+    .slider .sliderli {
+        width: 100%;
+    }
+
+    .slider .imagenPrincipal .imagensegunda .imagentercer .imagencuarta {
+        display: block;
+        width: 100vw;
+        height: 400px;
+    }
+
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/* boton ir al listado index*/
+
+.index{
+    
+}
+
+@media(min-width: 450px){
+    .buton-container a{
+        position:initial;
+    }
+}

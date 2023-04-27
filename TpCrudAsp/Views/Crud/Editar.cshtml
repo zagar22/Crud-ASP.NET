@@ -1,0 +1,60 @@
+﻿@model ModelAutos
+
+@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar</h1>
+
+<div class="card">
+    <h5 class="card-header">Editar informacion del Automovil</h5>
+    <div class="card-body">
+
+        <form asp-action="Editar" asp-controller="Crud" method="post">
+            <input asp-for="idAuto" type="hidden" class="form-control" />
+
+            <div class="mb-3">
+                <label class="form-label">Marca</label>
+                <input asp-for="marca" type="text" class="form-control" asp-validation-for="marca" class="text-danger">
+                <span asp-validation-for="marca" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Modelo</label>
+                <input asp-for="modelo" type="text" class="form-control">
+                <span asp-validation-for="modelo" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Patente</label>
+                <input asp-for="patente" type="text" class="form-control">
+                <span asp-validation-for="patente" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Precio</label>
+                <input asp-for="precio" type="text" class="form-control">
+                <span asp-validation-for="precio" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Descripcion</label>
+                <input asp-for="descripcion" type="text" class="form-control">
+                <span asp-validation-for="descripcion" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Escribe la URL de la Imagen</strong></label>
+                <input asp-for="img" type="text" class="form-control">
+                <span asp-validation-for="img" class="text-danger"></span>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a asp-action="Listar" asp-controller="Crud" class="btn btn-success volverListado">Volver al Listado de Autos</a>
+
+        </form>
+
+    </div>
+</div>

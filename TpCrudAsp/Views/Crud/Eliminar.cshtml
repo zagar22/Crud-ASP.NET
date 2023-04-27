@@ -1,0 +1,26 @@
+﻿@model ModelAutos
+@{
+    ViewData["Title"] = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Eliminar</h1>
+
+<div class="card">
+    <h5 class="card-header">Eliminar informacion del Cliente</h5>
+    <div class="card-body">
+
+        <form asp-action="Eliminar" asp-controller="Crud" method="post">
+            <input asp-for="idAuto" type="hidden" class="form-control" />
+
+            <div class="alert alert-danger" role="alert">
+                <strong>¿Desea Eliminar el Automovil @Html.DisplayTextFor(m => m.marca) @Html.DisplayTextFor(m => m.modelo)?</strong>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Eliminar</button>
+            <a asp-action="Listar" asp-controller="Crud" class="btn btn-success">Volver a la lista de Automoviles</a>
+
+        </form>
+
+    </div>
+</div>

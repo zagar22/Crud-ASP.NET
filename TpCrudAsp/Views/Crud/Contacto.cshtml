@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Contacto</h1>
+
+<div class="card">
+  <h5 class="card-header" style="height:40px;"></h5>
+    <div class="card-body">
+
+        <form asp-action="Listar" asp-controller="Crud" method="post">
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Nombre</strong></label>
+                <input  type="text" class="form-control" asp-validation-for="marca" class="text-danger">  
+                <span  class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Apellido</strong></label>
+                <input type="text" class="form-control">
+                <span  class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Telefono</strong></label>
+                <input  type="text" class="form-control">
+                <span  class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Asunto</strong></label>
+                <textarea style="height:150px;" type="text" class="form-control"></textarea>  
+                <span  class="text-danger"></span>
+            </div>
+
+           
+           
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <a asp-action="Listar" asp-controller="Crud" class="btn btn-success volver">Volver a la Lista de Autos</a>
+
+        </form>
+
+     </div>
+</div>
